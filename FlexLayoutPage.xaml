@@ -3,10 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoMAUI.FlexLayoutPage"
              Title="FlexLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <FlexLayout Direction="Column" Padding="10">
+            
+            
+            <Frame Padding="20" Margin="5" BorderColor="LightCoral" >
+                <Grid RowDefinitions="*,*"
+                        ColumnDefinitions="*,*">
+                    <Image 
+                        Source="dotnet_bot.png"
+                        HeightRequest="185"
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IrAbsoluteLayoutPage" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Label Text="Texto a la izquierda de la imagen"
+                       FontSize="18"
+                       HorizontalOptions="End"
+                       Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+                
+            </Frame>
+
+
+            <Frame Padding="20" Margin="5" BorderColor="LightCoral" >
+                <Grid RowDefinitions="*,*"
+                    ColumnDefinitions="*,*">
+                    <ImageButton 
+                        Source="dotnet_bot.png"
+                        HeightRequest="185"
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalOptions="Start"
+                        Clicked="IrAbsoluteLayoutPage"/>
+
+                    <Label Text="Texto a la izquierda de la imagen"
+                        FontSize="18"
+                        HorizontalOptions="End"
+                        Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+
+            </Frame>
+        </FlexLayout>
+
+    </ScrollView>
 </ContentPage>
