@@ -47,6 +47,23 @@
                 </Grid>
 
             </Frame>
+            <Frame Padding="20" Margin="5" BorderColor="LightCoral" >
+                <Grid RowDefinitions="*,*"
+                        ColumnDefinitions="*,*">
+                    <ImageButton 
+                        Source="dotnet_bot.png"
+                        HeightRequest="185"
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalOptions="Start"
+                        Clicked="IrAbsoluteLayoutPage"/>
+
+                    <Label Text="Texto a la izquierda de la imagen"
+                        FontSize="18"
+                        HorizontalOptions="End"
+                        Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+
+            </Frame>
         </FlexLayout>
 
     </ScrollView>

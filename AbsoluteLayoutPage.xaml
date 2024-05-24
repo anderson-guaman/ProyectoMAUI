@@ -3,5 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoMAUI.AbsoluteLayoutPage"
              Title="AbsoluteLayoutPage">
-    
+
+    <AbsoluteLayout>
+
+        <!-- Contenido desplazable -->
+        <ScrollView>
+            <StackLayout>
+                <!-- Contenido de ejemplo -->
+                <Label Text="Contenido que puede desplazarse"
+                       FontSize="24"
+                       Margin="10"/>
+                <BoxView Color="LightSkyBlue"
+                         HeightRequest="1000"/>
+                <Label Text="Más contenido"
+                       FontSize="24"
+                       Margin="10"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Botón en la esquina inferior derecha -->
+        <Button Text="Ir a GridLayout"
+                Clicked="IrGridLayoutPage"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+    </AbsoluteLayout>
 </ContentPage>
