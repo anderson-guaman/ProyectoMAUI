@@ -7,7 +7,8 @@
     <AbsoluteLayout>
 
         <!-- Contenido desplazable -->
-        <ScrollView>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
             <StackLayout>
                 <!-- Contenido de ejemplo -->
                 <Label Text="Contenido que puede desplazarse"
