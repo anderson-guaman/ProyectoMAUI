@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoMAUI.GridLayoutPage"
+             Title="GridLayoutPage">
+    <Grid RowDefinitions="*,*"
+          ColumnDefinitions="*,*">
+        
+        <!-- Primer cuadrado -->
+        <BoxView Color="LightSkyBlue"
+                 Grid.Row="0" Grid.Column="0" />
+
+        <!-- Segundo cuadrado -->
+        <BoxView Color="LightCoral"
+                 Grid.Row="0" Grid.Column="1" />
+
+        <!-- Tercer cuadrado -->
+        <BoxView Color="LightGreen"
+                 Grid.Row="1" Grid.Column="0" />
+        <!-- Cuarto cuadrado -->
+        <Grid Grid.Row="1" Grid.Column="1"
+              BackgroundColor="Beige">
+            <Button Text="IR A STACK LAYOUT"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="IrStackLayoutPage" />
+        </Grid>
+        
+
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoMAUI.StackLayout"
+             Title="StackLayout">
+    <VerticalStackLayout >
+        <!-- Primera etiqueta con tamaño de fuente pequeño -->
+        <Label Text="Texto pequeño"
+               FontSize="14"
+               HorizontalOptions="Center" />
+
+        <!-- Segunda etiqueta con tamaño de fuente mediano -->
+        <Label Text="Texto mediano"
+               FontSize="20"
+               HorizontalOptions="Center" />
+
+        <!-- Tercera etiqueta con tamaño de fuente grande -->
+        <Label Text="Texto grande"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <!-- Botón que navega a la página de FlexLayout -->
+        <Button Text="Ir a FlexLayout"
+                Clicked="IrFlexLayout"
+                HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
